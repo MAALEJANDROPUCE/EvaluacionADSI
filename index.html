@@ -49,5 +49,24 @@
     <div class="luz verde encendido" id="verde"></div>
   </div>
 
+  <script>
+    const luces = ["rojo", "amarillo", "verde"];
+    let indice = 0;
+
+    function cambiarLuz() {
+      luces.forEach(id => {
+        document.getElementById(id).classList.remove("encendido");
+      });
+
+      const luzActual = luces[indice];
+      document.getElementById(luzActual).classList.add("encendido");
+
+      indice = (indice + 1) % luces.length;
+    }
+
+    cambiarLuz(); 
+    setInterval(cambiarLuz, 1000);
+  </script>
+
 </body>
 </html>
