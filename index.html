@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  
+  <title>Semáforo</title>
+  <style>
+    body {
+      background: #f0f0f0;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+    }
+
+    .semaforo {
+      width: 100px;
+      background: #333;
+      padding: 20px;
+      border-radius: 20px;
+    }
+
+    .luz {
+      width: 60px;
+      height: 60px;
+      margin: 15px auto;
+      border-radius: 50%;
+      background-color: #111;
+    }
+
+    .rojo.encendido {
+      background-color: red;
+    }
+
+    .amarillo.encendido {
+      background-color: yellow;
+    }
+
+    .verde.encendido {
+      background-color: limegreen;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="semaforo">
+    <div class="luz rojo encendido" id="rojo"></div>
+    <div class="luz amarillo encendido" id="amarillo"></div>
+    <div class="luz verde encendido" id="verde"></div>
+  </div>
+
+</body>
+</html>
